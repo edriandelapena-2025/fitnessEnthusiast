@@ -1,5 +1,8 @@
 <?php
 $xmlFile = 'members.xml';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Handle form data
+}
 
 if (!file_exists($xmlFile)) {
     file_put_contents($xmlFile, '<members></members>');
